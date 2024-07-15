@@ -1,0 +1,12 @@
+.dots {
+    display: flex;
+    gap: 1rem;
+}
+
+.dot {
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background: #c4c4c4;
+}

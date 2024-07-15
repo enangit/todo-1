@@ -1,0 +1,28 @@
+.form-group {
+    display: grid;
+    gap: 0.2rem;
+}
+
+.form-group label{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #c4c4c4;
+}
+
+.form-group input{
+    min-height: 3.5rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+}
+
+.task-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.actions {
+    display: grid;
+    gap: 1rem;
+}

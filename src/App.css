@@ -1,0 +1,24 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.button {
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+    border: none;
+    min-width: 6rem;
+    background: lime;
+    color: #f1f1f1;
+    transition-property: background;
+    transition: 300ms ease-out;
+    font-weight: 400;
+
+}
+
+
+.button:hover {
+    font-weight: 500;
+    background: limegreen;
+}
