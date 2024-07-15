@@ -47,6 +47,11 @@ header {
     grid-area: tasks;
 }
 
+
+.container__tasks p{
+    margin: auto;
+}
+
 .container__form {
     grid-area: form;
 
