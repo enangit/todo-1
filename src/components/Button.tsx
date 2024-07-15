@@ -1,7 +1,7 @@
 import React, { ComponentPropsWithRef, forwardRef } from "react";
 
 interface Props extends ComponentPropsWithRef<"button"> {
-    children: string,
+    children: string | string[],
     onClick?: React.MouseEventHandler<HTMLButtonElement> | null
 }
 

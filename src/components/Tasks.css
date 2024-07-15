@@ -2,3 +2,19 @@
     text-decoration: line-through;
     color: gray;
 }
+.tasks {
+    display: grid;
+    gap: 1rem;
+}
+
+.task {
+    cursor: pointer;
+    padding-inline-start: 1rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background: #123232;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+}

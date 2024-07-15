@@ -1,39 +1,34 @@
-import React from "react";
+import React, { useContext } from "react";
 import Dots from "./Dots";
 import Button from "./Button";
 import "./Container.css";
 import Tasks from "./Tasks";
 import Form from "./Form";
+import { GlobalContext } from "../utils/GlobalContextProvider";
 
 function Container() {
+    const { todos } = useContext(GlobalContext);
+    const numberOfCompletedTask = todos.filter(todo => todo.isCompleted).length.toString()
+    const totalNumberOfTask = todos.length.toString();
 
     function handleClick() {
         console.log("clicked")
     }
 
-    function handleLogin() {
-        console.log("login clicked")
-    }
-
-    function handleRegister() {
-        console.log("register clicked")
-    }
 
     return (
         <section className="container">
+
+            <h1 className="text-heading">todo app</h1>
             <header className="container__header">
                 <Dots />
-                <Button onClick={handleClick} > 0 / 3 completed</Button>
+                <Button onClick={handleClick} > {numberOfCompletedTask} / {totalNumberOfTask} task completed</Button>
             </header>
             <div className="container__tasks">
                 <Tasks />
             </div>
             <div className="container__form">
                 <Form />
-                <div className="actions">
-                    <Button onClick={handleLogin}>Login </Button>
-                    <Button onClick={handleRegister}>Register</Button>
-                </div>
             </div>
         </section>
     )

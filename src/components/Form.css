@@ -10,11 +10,16 @@
 }
 
 .form-group input{
+    background: transparent;
     min-height: 3.5rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     padding: 1rem;
-    border: none;
+    border: 1px solid #3a655b;
     outline: none;
+}
+
+.form-group input:focus-visible{
+    outline: 2px solid #c1c1c1;
 }
 
 .task-form {
